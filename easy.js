@@ -1,4 +1,4 @@
-let easyQuestions = [
+export let easyQuestions = [
 {
         title: "What is Micheal's full name?",
         answer1: "Michael Nicholas Myers",

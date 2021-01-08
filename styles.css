@@ -9,6 +9,11 @@
   width: 100%;
 }
 
+.hard-view {
+  display: none;
+  width: 100%;
+}
+
 .open {
   display: inline-block;
 }

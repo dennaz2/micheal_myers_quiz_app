@@ -1,4 +1,4 @@
-let hardQuestions = [
+export let hardQuestions = [
     {
         title: "Where did Michael attack and kill Annie Brackett when she was trying to go see her boyfriend, Paul, in 'Halloween' (1978)?",
         answer1: "In her car",
@@ -89,4 +89,4 @@ let hardQuestions = [
         correctAnswer: 3
     }
 
-]
+];
