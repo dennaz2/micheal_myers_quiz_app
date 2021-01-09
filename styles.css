@@ -4,7 +4,7 @@
   margin: 0;
 }
 
-.easy-view {
+.question-view {
   display: none;
   width: 100%;
 }
@@ -20,4 +20,8 @@
 
 .close {
   display: none;
+}
+
+.choice {
+  display: flex;
 }

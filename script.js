@@ -3,14 +3,16 @@ import { easyQuestions } from './easy.js';
 import { hardQuestions } from './hard.js';
 
 //Define variables
-let easyView = document.querySelector('.easy-view');
+let easyQuiz = false;
+let hardQuiz = false;
+let questionView = document.querySelector('.question-view');
 let mainVeiw = document.querySelector('.main-view');
 let easyBtn = document.querySelector('.easy-btn');
-let hardView = document.querySelector('.hard-view');
 let hardBtn = document.querySelector('.hard-btn');
-let nextBtn = document.querySelector('.next-btn');
-let currentQues = {};
+let currentEasyQues = {};
+let currentHardQues = {};
 let questionCounter = 0;
+let acceptedAns = false;
 
 //question page variables
 let questionTitle = document.querySelector('.question');
@@ -21,34 +23,50 @@ let choices = document.querySelectorAll('.ans-choice');
 // start screen for easy quiz
 easyBtn.addEventListener('click', startEasyQuiz);
 
+//Start screen for hard quiz 
+hardBtn.addEventListener('click', startHardQuiz);
+
 function startEasyQuiz(event) {
     event.preventDefault();
     mainVeiw.style.display = "none";
-    easyView.classList.add('open');
-    showEasyQuestions();
+    questionView.classList.add('open');
+    easyQuiz = true;
+    showQuestions();
 }
-
-function showEasyQuestions() {
-    //selecting a random question
-    let randomQuestion = Math.floor(Math.random() * easyQuestions.length);
-    currentQues = easyQuestions[randomQuestion];
-    questionTitle.innerText = currentQues.title;
-
-
-    
-}
-
-
-//Start screen for hard quiz 
-hardBtn.addEventListener('click', startHardQuiz);
 
 function startHardQuiz(event) {
     event.preventDefault();
     mainVeiw.style.display = "none";
-    hardView.classList.add('open');
-    showHardQuestions();
+    questionView.classList.add('open');
+    hardQuiz = true;
+    showQuestions();
 }
 
-function showHardQuestions() {
-    console.log("Hello");
+function showQuestions() {
+    //selecting a random question
+    if (easyQuiz == true){
+        let randomEasyQuestion = Math.floor(Math.random() * easyQuestions.length);
+        currentEasyQues = easyQuestions[randomEasyQuestion];
+        questionTitle.innerText = currentEasyQues.title;
+
+        //answer choices
+        choices.forEach(choice => {
+            let easyQuesNum = choice.dataset["number"]; // getting the data number 
+            choice.innerText = currentEasyQues["answer" + easyQuesNum];
+        });
+    } else {
+        let randomHardQuestion = Math.floor(Math.random() * hardQuestions.length);
+        currentHardQues = hardQuestions[randomHardQuestion];
+        console.log(currentHardQues);
+        questionTitle.innerText = currentHardQues.title;
+
+        //answer choices
+        choices.forEach(choice => {
+            let hardQuesNum = choice.dataset["number"]; // getting the data number 
+            choice.innerText = currentHardQues["answer" + hardQuesNum];
+        });
+    }
+    
 }
+
+//Determine if answer choices are correct ir in-correct
