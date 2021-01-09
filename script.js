@@ -4,7 +4,6 @@ import { hardQuestions } from './hard.js';
 
 //Define variables
 let easyQuiz = false;
-let hardQuiz = false;
 let questionView = document.querySelector('.question-view');
 let mainVeiw = document.querySelector('.main-view');
 let easyBtn = document.querySelector('.easy-btn');
@@ -38,7 +37,6 @@ function startHardQuiz(event) {
     event.preventDefault();
     mainVeiw.style.display = "none";
     questionView.classList.add('open');
-    hardQuiz = true;
     showQuestions();
 }
 
