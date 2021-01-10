@@ -45,12 +45,13 @@ body {
 
 .title {
   text-align: center;
+  margin-bottom: 1em;
 }
 
 .logo {
   display: block;
-  width: 200px;
-  height: 200px;
+  width: 450px;
+  height: 450px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -58,7 +59,61 @@ body {
 .btn {
   display: block;
   width: 100%;
-  padding: 10px;
-  border-radius: 20px;
-  background-color: #888DA7;
+  padding: 15px;
+  border-radius: 15px;
+  background-color: black;
+  color: white;
+  border: solid 1px orange;
+}
+
+.easy-btn {
+  margin-bottom: 15px;
+}
+
+.btn:hover {
+  background-color: orange;
+  color: black;
+  font-weight: bold;
+}
+
+.choice:hover {
+  background-color: orange;
+}
+
+.center-text {
+  text-align: center;
+  margin-bottom: 30px;
+  color: whitesmoke;
+}
+
+.score-el {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.question {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.answerChoices {
+  margin-top: 40px;
+}
+
+.choice {
+  border: solid 2px orange;
+  margin-bottom: 20px;
+  padding: 20px;
+  display: flex;
+}
+
+.choice-num {
+  margin-right: 15px;
+}
+
+.non-bold {
+  font-weight: normal;
+  font-style: italic;
 }
