@@ -1,6 +1,6 @@
 export let hardQuestions = [
     {
-        title: "Where did Michael attack and kill Annie Brackett when she was trying to go see her boyfriend, Paul, in 'Halloween' (1978)?",
+        question: "Where did Michael attack and kill Annie Brackett when she was trying to go see her boyfriend, Paul, in 'Halloween' (1978)?",
         answer1: "A) In her car",
         answer2: "B) In her front yard",
         answer3: "C) In her house",
@@ -9,7 +9,7 @@ export let hardQuestions = [
 
     },
     {
-        title: "In 'Halloween II' (1981), what medical instrument did Michael use to kill Dr. Mixter?",
+        question: "In 'Halloween II' (1981), what medical instrument did Michael use to kill Dr. Mixter?",
         answer1: "A) He was decapitated with a bone saw.",
         answer2: "B) He was strangled with an IV tube.",
         answer3: "C) His throat was slit with a scalpel.",
@@ -17,7 +17,7 @@ export let hardQuestions = [
         correctAnswer: 4
     },
     {
-        title: "How did Nurse Karen Bailey meet her demise in 'Halloween II' (1981)?",
+        question: "How did Nurse Karen Bailey meet her demise in 'Halloween II' (1981)?",
         answer1: "A) She was stabbed in her chest with a butcher knife.",
         answer2: "B) She was thrown from a second storey window.",
         answer3: "C) She was beaten with a bat.",
@@ -25,7 +25,7 @@ export let hardQuestions = [
         correctAnswer: 4
     },
     {
-        title: "In 'Halloween: Resurrection' (2002), how did aspiring chef Rudy Grimes lose his kitchen battle with Michael?",
+        question: "In 'Halloween: Resurrection' (2002), how did aspiring chef Rudy Grimes lose his kitchen battle with Michael?",
         answer1: "A) He was beaten with a cutting board.",
         answer2: "B) His head was slammed repeatedly in the refrigerator door.",
         answer3: "C) He was stabbed in the neck with a corkscrew.",
@@ -33,7 +33,7 @@ export let hardQuestions = [
         correctAnswer: 4
     },
     {
-        title: "How was John Strode taken care of in 'Halloween: The Curse of Michael Myers' (1995)?",
+        question: "How was John Strode taken care of in 'Halloween: The Curse of Michael Myers' (1995)?",
         answer1: "A) He was hacked repeatedly with a hatchet.",
         answer2: "B) He was stabbed, pinned to a fuse box, and electrocuted.",
         answer3: "C) He was stabbed in forehead with a butcher knife.",
@@ -41,7 +41,7 @@ export let hardQuestions = [
         correctAnswer: 2
     },
     {
-        title: "Who played Laurie Strode?",
+        question: "Who played Laurie Strode?",
         answer1: "A) Jamie Lee Curtis",
         answer2: "B) Florence Henderson",
         answer3: "C) Valerie Bertinelli",
@@ -49,7 +49,7 @@ export let hardQuestions = [
         correctAnswer: 1
     },
     {
-        title: "How did Nurse How many friends did Laurie have? Bailey meet her demise in 'Halloween II' (1981)?",
+        question: "How did Nurse How many friends did Laurie have? Bailey meet her demise in 'Halloween II' (1981)?",
         answer1: "A) Three",
         answer2: "B) Two",
         answer3: "C) One",
@@ -57,7 +57,7 @@ export let hardQuestions = [
         correctAnswer: 2
     },
     {
-        title: "What character's mask was Michael's mask made out of?",
+        question: "What character's mask was Michael's mask made out of?",
         answer1: "A) Norman Bates from Psycho",
         answer2: "B) The blob",
         answer3: "C) The creature from the black lagoon",
@@ -65,7 +65,7 @@ export let hardQuestions = [
         correctAnswer: 4
     },
     {
-        title: "In what city did Laurie live?",
+        question: "In what city did Laurie live?",
         answer1: "A) Bayview",
         answer2: "B) Pittsburgh",
         answer3: "C) Haddonfield",
@@ -73,7 +73,7 @@ export let hardQuestions = [
         correctAnswer: 3
     },
     {
-        title: "What actor played the role of Samuel Loomis?",
+        question: "What actor played the role of Samuel Loomis?",
         answer1: "A) David Cassidy",
         answer2: "B) Patrick Duffy",
         answer3: "C) Alfred Hitchcock",
@@ -81,12 +81,11 @@ export let hardQuestions = [
         correctAnswer: 4
     },
     {
-        title: "In what body part did Michael stab Laurie, near the end of the movie?",
+        question: "In what body part did Michael stab Laurie, near the end of the movie?",
         answer1: "A) Neck",
         answer2: "B) Hand",
         answer3: "C) Arm/Shoulder",
         answer4: "D) leg",
         correctAnswer: 3
     }
-
 ];
