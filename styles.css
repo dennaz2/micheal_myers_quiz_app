@@ -7,6 +7,8 @@
 body {
   margin: 10px;
   padding: 10px;
+  color: white;
+  background-color: #000000;
 }
 
 .question-view,
@@ -29,11 +31,11 @@ body {
 }
 
 .correct {
-  background-color: #28a745;
+  background-color: #2ecc71;
 }
 
 .incorrect {
-  background-color: red;
+  background-color: #ba000d;
 }
 
 .choice {
@@ -56,4 +58,7 @@ body {
 .btn {
   display: block;
   width: 100%;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #888DA7;
 }
