@@ -46,7 +46,6 @@ function showQuestions() {
         questionCounter++;
         let randomQuestion = Math.floor(Math.random() * easyQuestions.length);
         currentQuestion = easyQuestions[randomQuestion];
-        console.log(currentQuestion)
         questionTitle.innerText = currentQuestion.question;
 
         //answer choices
