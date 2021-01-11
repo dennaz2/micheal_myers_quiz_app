@@ -106,6 +106,7 @@ function correctOrIncorrect(event) {
 
     const isCorrect = selectedAns == currentQuestion.correctAnswer ? "correct" : "incorrect"; //uses a ternary operator to give the element correct or incorrect 
     selectedChoice.parentElement.classList.add(isCorrect);
+    selectedChoice.parentElement.style.border = "none";
 
     if (isCorrect == "correct") {
         score += 10;
@@ -114,9 +115,10 @@ function correctOrIncorrect(event) {
      //add time delay; go to the next question after time delay 
     setTimeout(() => {
         selectedChoice.parentElement.classList.remove(isCorrect);
+        selectedChoice.parentElement.style.border = "1px solid orange";
         showQuestions();
     }, 1000);
-
+    
 }
 
 // start screen for easy quiz

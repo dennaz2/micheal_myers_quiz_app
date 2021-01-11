@@ -31,10 +31,12 @@ body {
 }
 
 .correct {
+  border: none;
   background-color: #2ecc71;
 }
 
 .incorrect {
+  border: none;
   background-color: #ba000d;
 }
 

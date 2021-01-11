@@ -25,7 +25,7 @@ export let easyQuestions = [
         correctAnswer: 4
     },
     {
-        question: "Whats Michael`s father`s name?",
+        question: "What's Michael's father's name?",
         answer1: "Peter",
         answer2: "Ron",
         answer3: "Don",
@@ -33,7 +33,7 @@ export let easyQuestions = [
         correctAnswer: 1
     },
     {
-        question: "Whats Michael`s mothers`s name?",
+        question: "What's Michael's mothers's name?",
         answer1: "Edith",
         answer2: "Deborah",
         answer3: "Audrey",
@@ -49,7 +49,7 @@ export let easyQuestions = [
         correctAnswer: 4
     },
     {
-        question: "Whats the name of the younger sister he spared?",
+        question: "What's the name of the younger sister he spared?",
         answer1: "Edith Strode",
         answer2: "Deborah Strode",
         answer3: "Laura Ann Strode",
